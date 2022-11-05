@@ -6,7 +6,8 @@ namespace CarRentalAPI.Models
 	public class Car
 	{
 		[Required]
-		public int Id { get; set; }
+        [Key]
+        public int Id { get; set; }
         [Required]
         public string Make { get; set; }
         [Required]
